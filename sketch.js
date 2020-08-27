@@ -6,7 +6,7 @@ const Body = Matter.Body;
 
 function preload()
 {
-	dustbinImg = loadImage("dustbingreen.png")
+	
 }
 
 function setup() {
@@ -21,7 +21,6 @@ function setup() {
 	paper = new Paper(100, 20, 20);
 
 	base = new Dustbin(950, 350, 200, 20);
-	base.addAnimation(dustbinImg);
 
 	left = new Dustbin(840, 284, 20, 150);
 	right = new Dustbin(1040, 284, 20, 150);
