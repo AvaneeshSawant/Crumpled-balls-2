@@ -21,10 +21,9 @@ function setup() {
 	paper = new Paper(100, 20, 20);
 
 	base = new Dustbin(950, 350, 200, 20);
-	base.addImage(dustbinImg);
 
-	left = new Dustbin(840, 284, 20, 150);
-	right = new Dustbin(1040, 284, 20, 150);
+	left = new Dustbin(840, 264, 20, 190);
+	right = new Dustbin(1040, 264, 20, 190);
 
 
 	ground = new Ground(600, 370, 1200, 20);
@@ -38,16 +37,13 @@ function draw() {
   rectMode(CENTER);
   background(0);
 
- 
-
   ground.display();
-
-  base.display();
   left.display();
-  right.display();
-
   paper.display();
 
+  base.display();
+  
+  right.display();
  
 }
 

@@ -8,6 +8,7 @@ class Dustbin{
         this.width = width;
         this.height = height;
 
+        this.image = loadImage("dustbingreen.png")
         World.add(world, this.body)
     }
 
@@ -17,5 +18,7 @@ class Dustbin{
         fill("white");
         rectMode(CENTER);
         rect(pos.x, pos.y, this.width, this.height);
+        imageMode(CENTER);
+        image(this.image, 940, 260, 230, 210)
     }
 }
